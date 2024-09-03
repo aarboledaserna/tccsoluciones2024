@@ -16,13 +16,13 @@ public class Mercancia {
     private Long iup;
     //volumen
     @Column(name = "volumen", nullable = false, unique = false)
-    private Double volumen;
+    private Double volumen; //solo se aceptan numeros positivos
     //peso
-    private Double peso;
+    private Double peso; //solo se aceptan numeros positivos
     //nombre
 
     @Column(name = "nombre_mercancia", nullable = false, length = 50)
-    private String nombre;
+    private String nombre; //maximo 50 caracteres y solo se acepan letras y espacios
     //tipoDestinatario
     private String tipoDestinatario;
     //nombreDestinatario
@@ -36,7 +36,7 @@ public class Mercancia {
     //zonaBodega
 
     //fechaIngreso
-    private LocalDate fechaIngreso;
+    private LocalDate fechaIngreso; //fecha ingreso no puede ser posterior a la fecha de ingreso
     //fechaSalida
     private LocalDate fechaSalida;
 

@@ -21,8 +21,16 @@ public class MercanciaServicio {
     IMercanciaRepositorio repositorio;
 
     //guardar
-    public Mercancia almacenarMercancia(Mercancia datosMercancia){
-        return null;
+    public Mercancia almacenarMercancia(Mercancia datosMercancia) throws Exception{
+        try{
+
+            //aplicar validaciones a los datos recibidos
+            //si sale bien la validacion llamo al repo para guardar los datos
+            return null;
+
+        }catch(Exception error){
+            throw new Exception(error.getMessage());
+        }
     }
 
     //buscar todos
